@@ -28,6 +28,8 @@ h2{
     background: rgba(0, 0, 0, 0.527);
     border-radius: 20px 0;
     box-shadow: 1px 2px 10px #000, 3px 6px 20px #000;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
     padding: 50px 20px;
 }
 
@@ -59,25 +61,25 @@ label {
 }
 
 input:focus{
-    border-bottom: 2px solid #26a96a ;
-    box-shadow: 0 1px 0 0 #26a96a;
+    border-bottom: 2px solid #a96c26 ;
+    box-shadow: 0 1px 0 0 #a96c26;
 }
 
 input:focus + label{
     transform: translate(-14px) scale(.8);
-    color: #26a96a;
+    color: #a96c26;
     font-weight: bold;
 }
 
 input:not(:placeholder-shown) + label{
     transform: translate(-14px) scale(.8);
-    color: #26a96a;
+    color: #a96c26;
     font-weight: bold;
 
 }
 input:not(:placeholder-shown){
-    border-bottom: 2px solid #26a96a ;
-    box-shadow: 0 1px 0 0 #26a96a;
+    border-bottom: 2px solid #a96c26 ;
+    box-shadow: 0 1px 0 0 #a96c26;
 }
 
 input::placeholder{
@@ -112,5 +114,5 @@ a{
 
 }
 a:hover{
-    color: #26a96a;
+    color: #a96c26;
 }
